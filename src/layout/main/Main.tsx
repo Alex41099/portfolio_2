@@ -5,6 +5,7 @@ import Photo from "../../accets/img/image-_1_.webp"
 import {Container} from "../../components/Container";
 import {theme} from "../../styled/Theme";
 import {Button} from "../../components/Button";
+import {font} from "../../styled/Common";
 
 export const Main = () => {
     return (
@@ -43,21 +44,14 @@ const S_Section = styled.section`
 
 const S_H1 = styled.h1`
     text-transform: uppercase;
-    
     color: #D7E5EC;
     font-family: Tinos, sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-
-    @media ${theme.media.tablet} {
-        font-size: 16px;
-    }
+    ${font({weight: 400, Fmax: 20, Fmin: 16})}
     
 `
 
 const S_H2 = styled.h2`
-    font-size: 72px;
-    font-weight: 600;
+    ${font({weight: 600, Fmax: 72, Fmin: 40})}
     margin: 10px 0;
 
     background: linear-gradient(90deg, #00F5A0 0%, #00D9F5 100%);
@@ -67,8 +61,6 @@ const S_H2 = styled.h2`
 
     @media ${theme.media.tablet} {
         margin: 12px 0 16px;
-        
-        font-size: 40px;
         line-height: 100%; 
     }
 `

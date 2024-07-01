@@ -5,6 +5,7 @@ import {Icon} from "../../components/Icon";
 import {Container} from "../../components/Container";
 import {theme} from "../../styled/Theme";
 import {SectionTitle} from "../../components/SectionTitle";
+import {font} from "../../styled/Common";
 
 const array = [
     {
@@ -206,13 +207,13 @@ const S_span = styled.span`
         margin-top: 20px;
         white-space: nowrap;
         text-align: center;
+        ${font({weight: 400, Fmax: 16, Fmin: 12})}
         font-size: 16px;
         font-weight: 400;
-        letter-spacing: 2.166px;
+        letter-spacing: 2.1px;
         text-transform: uppercase;
         
         @media ${theme.media.tablet} {
-            font-size: 12px;
             letter-spacing: 1.6px;
         }
     }
