@@ -7,6 +7,7 @@ import {theme} from "../../styled/Theme";
 import {SectionTitle} from "../../components/SectionTitle";
 import {font} from "../../styled/Common";
 
+
 const array = [
     {
         icon: "jsSvg",
@@ -70,58 +71,58 @@ export const Skills = () => {
             <Container>
                 <SectionTitle>Skills</SectionTitle>
                 <FlexWrapper justifyContent={"center"} gap={120} flexWrap={"wrap"}>
-                    <S_span>
-                        <Icon iconId={"jsSvg"}/>
-                        <span>JAVACRIPT</span>
-                    </S_span>
-                    <S_span>
-                        <Icon iconId={"tsSvg"}/>
-                        <span>typescript</span>
-                    </S_span>
-                    <S_span>
-                        <Icon iconId={"mongoSvg"}/>
-                        <span>mongo db</span>
-                    </S_span>
-                    <S_span>
-                        <Icon iconId={"postgreSvg"}/>
-                        <span>PostgreSQL</span>
-                    </S_span>
-                    <S_span>
-                        <Icon iconId={"jest"}/>
-                        <span>jest</span>
-                    </S_span>
-                    <S_span>
-                        <Icon iconId={"express"}/>
-                        <span>Express JS</span>
-                    </S_span>
-                    <S_span>
-                        <Icon iconId={"nestSvg"}/>
-                        <span>Nest JS</span>
-                    </S_span>
-                    <S_span>
-                        <Icon iconId={"dockerSvg"}/>
-                        <span>Docker</span>
-                    </S_span>
-                    <S_span>
-                        <Icon iconId={"reactSvg"}/>
-                        <span>react js</span>
-                    </S_span>
-                    <S_span>
-                        <Icon iconId={"reactNative"}/>
-                        <span className={"reactNative"}>react nactive</span>
-                    </S_span>
-                    <S_span>
-                        <Icon iconId={"styledComponentsSvg"}/>
-                        <span className={"styledComponents"}>Styled Components</span>
-                    </S_span>
-                    <S_span>
-                        <Icon iconId={"reduxSvg"}/>
-                        <span>Redux</span>
-                    </S_span>
-                    <S_span>
-                        <Icon iconId={"gitSvg"}/>
-                        <span className={"git"}>git</span>
-                    </S_span>
+                        <S_span>
+                            <Icon iconId={"jsSvg"}/>
+                            <span>JAVACRIPT</span>
+                        </S_span>
+                        <S_span>
+                            <Icon iconId={"tsSvg"}/>
+                            <span>typescript</span>
+                        </S_span>
+                        <S_span>
+                            <Icon iconId={"mongoSvg"}/>
+                            <span>mongo db</span>
+                        </S_span>
+                        <S_span>
+                            <Icon iconId={"postgreSvg"}/>
+                            <span>PostgreSQL</span>
+                        </S_span>
+                        <S_span>
+                            <Icon iconId={"jest"}/>
+                            <span>jest</span>
+                        </S_span>
+                        <S_span>
+                            <Icon iconId={"express"}/>
+                            <span>Express JS</span>
+                        </S_span>
+                        <S_span>
+                            <Icon iconId={"nestSvg"}/>
+                            <span>Nest JS</span>
+                        </S_span>
+                        <S_span>
+                            <Icon iconId={"dockerSvg"}/>
+                            <span>Docker</span>
+                        </S_span>
+                        <S_span>
+                            <Icon iconId={"reactSvg"}/>
+                            <span>react js</span>
+                        </S_span>
+                        <S_span>
+                            <Icon iconId={"reactNative"}/>
+                            <span className={"reactNative"}>react nactive</span>
+                        </S_span>
+                        <S_span>
+                            <Icon iconId={"styledComponentsSvg"}/>
+                            <span className={"styledComponents"}>Styled Components</span>
+                        </S_span>
+                        <S_span>
+                            <Icon iconId={"reduxSvg"}/>
+                            <span>Redux</span>
+                        </S_span>
+                        <S_span>
+                            <Icon iconId={"gitSvg"}/>
+                            <span className={"git"}>git</span>
+                        </S_span>
                 </FlexWrapper>
             </Container>
         </S_Section>
@@ -129,10 +130,10 @@ export const Skills = () => {
 };
 
 const S_Section = styled.section`
-    padding: 140px 0 0;
+    padding: 60px 0 60px;
 
     background-color: ${theme.color.backgroundSection};
-    
+
     ${SectionTitle} {
         margin-bottom: 28px;
     }
@@ -140,18 +141,18 @@ const S_Section = styled.section`
     .reactNative {
         margin-left: -20px;
     }
-    
+
     .styledComponents {
         margin-left: -55px;
     }
-    
+
     @media screen and (max-width: 889px) {
         padding: 50px 0;
-        
+
         ${FlexWrapper} {
             gap: 48px;
         }
-        
+
     }
 
     @media screen and (max-width: 841px) {
@@ -180,7 +181,7 @@ const S_Section = styled.section`
         }
 
     }
-    
+
     @media ${theme.media.mobile} {
         ${FlexWrapper} {
             gap: 0;
@@ -200,7 +201,7 @@ const S_span = styled.span`
     min-width: 90px;
     height: 164px;
     text-align: center;
-    
+
 
     span {
         display: inline-block;
@@ -212,10 +213,10 @@ const S_span = styled.span`
         font-weight: 400;
         letter-spacing: 2.1px;
         text-transform: uppercase;
-        
+
         @media ${theme.media.tablet} {
             letter-spacing: 1.6px;
         }
     }
-    
+
 `

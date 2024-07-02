@@ -23,7 +23,7 @@ export const AboutMe = () => {
 };
 
 const S_Section = styled.section`
-    padding: 132px 0 130px;
+    padding: 82px 0 90px;
     min-height: 170px;
     background-color: ${theme.color.backgroundSection};
     

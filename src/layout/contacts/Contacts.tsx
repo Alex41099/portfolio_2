@@ -8,7 +8,7 @@ import {Button} from "../../components/Button";
 
 export const Contacts = () => {
     return (
-        <S_Section>
+        <S_Section id="contacts">
             <Container>
                 <SectionTitle>Contacts</SectionTitle>
                 <S_Form>
@@ -28,8 +28,9 @@ export const Contacts = () => {
 };
 
 const S_Section = styled.section`
+    position: relative;
     background-color: ${theme.color.backgroundSection};
-    padding-top: 140px;
+    padding-top: 50px;
     
     ${SectionTitle} {
         margin-bottom: 28px;
@@ -69,16 +70,22 @@ const S_Input = styled.input`
     padding: 15px 18px;
 
     color: ${theme.color.font};
-    font-family: Montserrat;
     font-size: 16px;
     font-weight: 500;
     
     &::placeholder {
         color: ${theme.color.placeholder};
-        font-family: Montserrat;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
     }
+
+
+    &:focus {
+        outline: #00F5A0;
+        border-color: #00F5A0;
+        
+    }
+    
 `

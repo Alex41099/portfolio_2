@@ -25,7 +25,7 @@ export const Projects = () => {
     const [allProject, setAllProject] = React.useState(false);
 
     return (
-        <S_Section>
+        <S_Section id="projects">
             <Container>
                 <SectionTitle>Projects</SectionTitle>
                 <FlexWrapper flexWrap={"wrap"} justifyContent={"center"} gap={27}>
@@ -38,7 +38,8 @@ export const Projects = () => {
                         title={"Insightgram"}
                         text={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."}/>
                         {allProject? <MobileProjects/>: null}
-                    <span onClick={() => {setAllProject(!allProject)}}>{width > breakpoint? <MobileProjects/>: <MobileButton/>}</span>
+                    <span onClick={() => {setAllProject(!allProject)}}>{width > breakpoint?
+                        <MobileProjects/>: <MobileButton/>}</span>
                 </FlexWrapper>
             </Container>
         </S_Section>
@@ -46,6 +47,8 @@ export const Projects = () => {
 };
 
 const S_Section = styled.section`
+    padding: 40px 0 80px;
+    position: relative;
     background-color: ${theme.color.backgroundSection};
     
     ${SectionTitle} {

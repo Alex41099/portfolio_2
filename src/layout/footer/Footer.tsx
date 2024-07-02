@@ -37,6 +37,7 @@ export const Footer = () => {
 };
 
 const S_Footer = styled.footer`
+    position: relative;
     background-color: ${theme.color.backgroundSection};
     padding: 190px 0 100px;
     

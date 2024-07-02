@@ -6,6 +6,7 @@ import {Container} from "../../components/Container";
 import {theme} from "../../styled/Theme";
 import {Button} from "../../components/Button";
 import {font} from "../../styled/Common";
+import Typewriter from 'typewriter-effect';
 
 export const Main = () => {
     return (
@@ -13,7 +14,17 @@ export const Main = () => {
             <Container>
                 <FlexWrapper justifyContent={"center"} alignItems={"center"} flexWrap={"wrap"}>
                     <FlexWrapper flexDirection={"column"} justifyContent={"center"}>
-                        <S_H1>Web developer</S_H1>
+                        <S_H1 className={"H1_None"}>Web developer</S_H1>
+                        <S_H1>
+                            <Typewriter
+                                options={{
+                                    strings: ['Web developer', 'React developer'],
+                                    autoStart: true,
+                                    loop: true,
+                                    delay: 100,
+                                }}
+                            />
+                        </S_H1>
                         <S_H2>John Doe</S_H2>
                         <S_P>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
                             consequat duis enim velit mollit. Exercitation veniam consequat sunt.</S_P>
@@ -28,7 +39,8 @@ export const Main = () => {
 };
 
 const S_Section = styled.section`
-    padding: 96px 0 132px;
+    position: relative;
+    padding: 96px 0 184px;
     width: 100%;
     min-height: 526px;
     background-color: ${theme.color.backgroundSection};
@@ -39,6 +51,10 @@ const S_Section = styled.section`
         ${FlexWrapper} {
             align-items: center;
         }
+    }
+    
+    .H1_None {
+        display: none;
     }
 `
 

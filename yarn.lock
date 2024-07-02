@@ -5369,6 +5369,13 @@ indent-string@^4.0.0:
   resolved "https://registry.yarnpkg.com/indent-string/-/indent-string-4.0.0.tgz#624f8f4497d619b2d9768531d58f4122854d7251"
   integrity sha512-EdDDZu4A2OyIK7Lr/2zG+w5jmbuk1DVBnEwREQvBzspBJkCEbRa8GxU1lghYcaGJCnRWibjDXlq779X1/y5xwg==
 
+index@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/index/-/index-0.4.0.tgz#e9a6b1c8404f2aa8b44f52c6edd4805c70c1cf75"
+  integrity sha512-48AIN2XNXFXDb7muQD+4RZvXSy862VkXu5vkLh2zjikLOBWjI68OBUaRxt8ng1tolPlK9vrwMP/5th0VY53oNg==
+  dependencies:
+    step ">= 0.0.4"
+
 inflight@^1.0.4:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/inflight/-/inflight-1.0.6.tgz#49bd6331d7d02d0c09bc910a1075ba8165b56df9"
@@ -8519,6 +8526,11 @@ statuses@2.0.1:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.5.0.tgz#161c7dac177659fd9811f43771fa99381478628c"
   integrity sha512-OpZ3zP+jT1PI7I8nemJX4AKmAX070ZkYPVWV/AaKTJl+tXCTGyVdC1a4SL8RUQYEwk/f34ZX8UTykN68FwrqAA==
+
+"step@>= 0.0.4":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/step/-/step-1.0.0.tgz#b300e9d2ae9057d4d78633aae2303813a94bdff2"
+  integrity sha512-sqFPUYBKa+XDdUz76UbHwUYP9eJ4i4aj/pm+4GkF1UQs5CcIdifZsGpyO3FASFv/ET2DtWLcrL8KfhjWwwwkfg==
 
 stop-iteration-iterator@^1.0.0:
   version "1.0.0"
